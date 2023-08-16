@@ -13,10 +13,10 @@ const setTarea = asyncHandler( async(req, res) =>{
         res.status(400)
         throw new Error ('Falta el texto')
     } 
-        const tarea = Tarea.create({
-            texto: req.body.texto,
-        })
-        res.status(201).json(tarea)
+    const tarea = Tarea.create({
+        texto: req.body.texto,
+    })
+    res.status(201).json(tarea)
     
 })
 
