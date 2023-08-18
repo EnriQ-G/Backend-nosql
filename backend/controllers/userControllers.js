@@ -66,7 +66,7 @@ const generateToken = (id, name) =>{
 }
 
 const getUserData =asyncHandler( async(req, res) =>{
-    res.json({message:"Mis Datos de Usuario"})
+    res.json(req.user)
 })
 
 
